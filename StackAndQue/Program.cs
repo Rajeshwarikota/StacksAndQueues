@@ -13,12 +13,31 @@ namespace StackAndQue
         {
             Console.WriteLine("...Stacks and queues....");
             Stack stack = new Stack();
-            stack.Add(50);
-            stack.Add(30);
-            stack.Add(70);
-            stack.Display();
-            stack.isEmpty();
-            stack.Display();
+            Queues Queues = new Queues();
+           
+                Console.WriteLine("Please Choose \n1.Stack \n2.Queue \n3.Exit");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        stack.Add(56);
+                        stack.Add(30);
+                        stack.Add(70);
+                        stack.Display();
+                        stack.isEmpty();
+                        stack.Display();
+                        break;
+                    case 2:
+                        Queues.Enqueue(56);
+                        Queues.Enqueue(30);
+                        Queues.Enqueue(70);
+                        Queues.Display();
+                        break;
+                   
+                    default:
+                        Console.WriteLine("Choose the Correct Number !");
+                        break;
+               }
             Console.ReadLine();
         }
     }

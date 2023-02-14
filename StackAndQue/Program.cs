@@ -13,9 +13,11 @@ namespace StackAndQue
         {
             Console.WriteLine("...Stacks and queues....");
             Stack stack = new Stack();
-            stack.Add(30);
             stack.Add(50);
-            stack.Add(10);
+            stack.Add(30);
+            stack.Add(70);
+            stack.Display();
+            stack.isEmpty();
             stack.Display();
             Console.ReadLine();
         }
